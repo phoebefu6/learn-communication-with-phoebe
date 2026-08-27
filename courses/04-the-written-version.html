@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 4 of 6. The scorer. Sentence length, passive voice, abstraction, specifics and ask position - all measured on your real text. Take the message from 5 to 100, then switch on the lever everybody asks for.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="The written version - learn communication with phoebe">
+<meta property="og:description" content="Session 4 of 6. Six things measured on your own text, including where your ask is buried.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-communication-with-phoebe/courses/04-the-written-version.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-communication-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The written version - learn communication with phoebe">
+<meta name="twitter:description" content="Session 4 of 6. From 5 out of 100 to 100, then the anti-lever.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-communication-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 4 · The written version - learn communication with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=2">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-communication-with-phoebe</a> / Session 4 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Communication with Phoebe · Session 4 of 6</div>
+    <h1>The written <span class="accent">version</span></h1>
+    <p class="sub">Writing advice is usually somebody's taste with a confident voice attached. Tonight almost none of it is: a scorer reads your actual text and counts what is actually in it - how long your sentences run, how many passive constructions you used, which corporate abstractions are present by name, how many real dates and numbers you gave, and which sentence your ask is in. Daybreak's message goes from 5 out of 100 to 100. Then you switch on the most reasonable request in professional life and lose 36 points.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Medium</span>
+      <span class="chip audience">The scorer session - bring your restructured message</span>
+      <span class="chip audience">Nothing leaves your browser</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · The six things a reader is reacting to</span>
+      <span class="a3" style="flex:5">18-40 · Build-along: the clarity scorer</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we are</h2>
+    </div>
+    <p class="lede">Session 3 fixed the order without changing a word. Tonight the words change, and for the first time in this course the improvement has a number on it rather than an opinion.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">Live = presented in the 45 minutes</span>
+      <span class="pill">Self-study = the full depth, after class</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> Your own message scored, the list of abstractions in it by name, a rewritten version, and a sentence you can use when somebody asks you to add more context.</p>
+    </div>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>What is measured and what is a rubric<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Worth being precise about, because it is what makes the number worth anything:</p>
+        <ul>
+          <li><strong>Genuinely measured, on your text:</strong> words per sentence, total words, how many dates and numbers appear, which corporate abstractions appear (from a fixed list of 30, reported back by name), and which sentence contains your ask, out of how many.</li>
+          <li><strong>Measured, but heuristically:</strong> the passive-voice count is a regex over a fixed participle list. It will miss some passives and occasionally flag something that is not one. Treat it as a prompt to look, not a verdict.</li>
+          <li><strong>A rubric, chosen not discovered:</strong> turning those six numbers into a score out of 100. The weights are written down in the source map. Two people can write a 70 and an 85 and the 70 can be the better message for its reader.</li>
+        </ul>
+        <p>Nothing you paste leaves the browser. There is no model call anywhere in this widget - it is string analysis, which is also why it can be honest about its own limits.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 1 ============ -->
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers the six things</span>
+      <h2>Six things a reader is reacting to, whether or not they could name them</h2>
+      <span class="tag concept">7 min live</span>
+    </div>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The six measured properties of a message with what each is worth on the scorer and what full marks looks like">
+        <style>
+          .c4mH { font: 800 12px Inter, sans-serif; fill: #123441; }
+          .c4mB { font: 400 12px Inter, sans-serif; fill: #17242A; }
+          .c4mN { font: 400 11.5px Inter, sans-serif; fill: #5C6B72; }
+          .c4mV { font: 800 12px Inter, sans-serif; fill: #17242A; }
+        </style>
+        <text class="c4mH" x="40" y="32">What is counted</text>
+        <text class="c4mH" x="430" y="32">Full marks at</text>
+        <text class="c4mH" x="720" y="32">Worth</text>
+        <line x1="40" y1="44" x2="840" y2="44" stroke="#DEE8EC"/>
+
+        <text class="c4mB" x="40" y="74">Which sentence your ask is in</text>
+        <text class="c4mN" x="430" y="74">sentence 1 or 2</text>
+        <text class="c4mV" x="720" y="74">30</text>
+
+        <text class="c4mB" x="40" y="104">Words per sentence</text>
+        <text class="c4mN" x="430" y="104">15 or fewer</text>
+        <text class="c4mV" x="720" y="104">20</text>
+
+        <text class="c4mB" x="40" y="134">Passive constructions</text>
+        <text class="c4mN" x="430" y="134">zero</text>
+        <text class="c4mV" x="720" y="134">15</text>
+
+        <text class="c4mB" x="40" y="164">Corporate abstractions</text>
+        <text class="c4mN" x="430" y="164">zero</text>
+        <text class="c4mV" x="720" y="164">15</text>
+
+        <text class="c4mB" x="40" y="194">Dates and numbers</text>
+        <text class="c4mN" x="430" y="194">three or more</text>
+        <text class="c4mV" x="720" y="194">10</text>
+
+        <text class="c4mB" x="40" y="224">Total length</text>
+        <text class="c4mN" x="430" y="224">120 words or fewer</text>
+        <text class="c4mV" x="720" y="224">10</text>
+
+        <rect x="40" y="248" width="800" height="58" rx="10" fill="#ECF4F7" stroke="#1F4E5F" stroke-width="1.5"/>
+        <text class="c4mH" x="60" y="274">Ask position is worth 30 and costs one cut-and-paste.</text>
+        <text class="c4mN" x="60" y="296">Everything else on this list is real work. That is the whole argument for doing session 3 first.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the cheapest row is also the most valuable one</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Passive voice, and when it is actually evasion<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Passive voice is not wrong. "The database was migrated overnight" is fine - nobody cares who did it. It becomes a problem in one specific situation, and that situation is exactly the one Daybreak's data lead is in.</p>
+        <ul>
+          <li><strong>"It was subsequently determined that the migration is more involved."</strong> Determined by whom? The sentence removes the person, and on a piece of bad news that reads as distancing yourself from it - whether or not that was the intention.</li>
+          <li><strong>"We underestimated the migration."</strong> Same fact, four words shorter, and it reads as someone in control of their own project rather than someone reporting weather.</li>
+          <li><strong>The rule of thumb:</strong> if the sentence is about something going wrong, name who. Passive on bad news is read as evasion by almost everybody, and it is the most expensive misreading in this session.</li>
+        </ul>
+        <div class="callout tip">
+          <p>Daybreak's original has <strong>eight</strong> passive constructions in 163 words, and every one of them is on the part that went wrong. Nobody wrote that deliberately. It is just what people reach for when they are uncomfortable, which is precisely why it is worth counting rather than trusting your ear.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The abstractions, listed by name<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The widget checks against a fixed list of 30 phrases. It is a chosen list, not a derived one - a starting point for noticing rather than a standard. Here is what it finds in Daybreak's original, all nine of them:</p>
+        <p class="mono" style="line-height:2">circle back &middot; going forward &middot; holistic &middot; ecosystem &middot; workstream &middot; state of play &middot; knock-on &middot; as you will be aware &middot; at this moment in time</p>
+        <p>Notice the common property: <strong>each one could be deleted without losing information.</strong> "Circle back" means "write to you". "State of play" means "status". "As you will be aware" means "you know this already", which is a reason to delete the sentence rather than to introduce it.</p>
+        <div class="callout example">
+          <span class="ex-pill">The honest caveat</span>
+          <p>Some of these are fine in some rooms. "Workstream" is a real word in organisations that have workstreams. The test is not the word, it is whether the reader learns anything from it - and the counter exists to make you look, not to make the decision.</p>
+        </div>
+      </div>
+    </details>
+
+    <div class="tryrow" data-fn="wordcount" data-multiline="1" data-title="A quick read-aloud check before the real scorer" data-hint="Paste any paragraph" data-seed="It was subsequently determined that the migration piece is more involved than was originally scoped, which has had a knock-on effect on the timeline, and additional complexity was introduced by the payments integration." data-cta="Measure it"></div>
+
+    <p>That is one sentence from Daybreak's original: 33 words, three passive constructions, one abstraction, and no person anywhere in it. The rewrite is <em>"We underestimated the migration. The payments integration took three weeks longer than we scoped."</em> Thirteen words, two sentences, and somebody is responsible.</p>
+  </section>
+
+  <!-- ============ DEMO ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>The clarity scorer</h2>
+      <span class="tag demo">★ 22 min · everyone builds</span>
+    </div>
+    <p class="lede">Two modes. The Daybreak message has levers that genuinely rewrite the text. Your own message does not, because nothing here can honestly rewrite something it has never seen - but every number is computed by exactly the same functions.</p>
+
+    <div id="comm-live"></div>
+
+    <div class="tick" data-stages="As sent|Ask first|Delete opener|Split|Who did what|Plain words|Numbers" data-title="The ladder, rung by rung" data-foot="These are the exact numbers the scorer produces. Climb in this order and read the ask-position line each time.">
+      <p class="tick-note" data-stage="0"><b>5 / 100 · ask in sentence 4 of 4 · 40.8 words per sentence · 8 passives · 9 abstractions · 0 specifics · 163 words.</b> The message as sent, three times, to no reply. Nothing about it is unprofessional, which is exactly why it survived three attempts.</p>
+      <p class="tick-note" data-stage="1"><b>35 / 100 · ask now in sentence 1 of 4.</b> One paragraph moved. Not a single word rewritten - the length, the passives and the abstractions are all still exactly as they were. Thirty points for a cut-and-paste.</p>
+      <p class="tick-note" data-stage="2"><b>45 / 100 · 117 words, 4 abstractions.</b> Delete the opening that recaps what she already knows. Forty-six words gone and five of the nine abstractions went with them, because that paragraph was where they lived.</p>
+      <p class="tick-note" data-stage="3"><b>59 / 100 · 18.3 words per sentence.</b> One idea per sentence. Watch the ask position: it stays at sentence 1 because you moved it first. Doing this step before session 3 would have taken it to sentence 9 of 9.</p>
+      <p class="tick-note" data-stage="4"><b>69 / 100 · 3 passives left.</b> Say who did what. "We underestimated" instead of "it was determined". The message stops sounding like weather and starts sounding like a person running a project.</p>
+      <p class="tick-note" data-stage="5"><b>84 / 100 · 1 abstraction, 69 words.</b> Plain words. The biggest single drop in length in the whole ladder, because abstractions are long as well as empty.</p>
+      <p class="tick-note" data-stage="6"><b>100 / 100 · 9.5 words per sentence · 0 passives · 0 abstractions · 7 specifics · 57 words.</b> Dates and numbers instead of adjectives. 57 words, from 163, and it now says more than the original did.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step"><p><strong>Start with the message as sent and read the score.</strong> Five out of 100. Then read the message itself - it is not badly written by any normal standard. That gap between "reads fine" and "scores 5" is the reason this widget exists.</p></div>
+      <div class="step"><p><strong>Switch on "put the ask in the first sentence" alone.</strong> 5 to 35. Nothing else on the board changes - same words, same length, same passives. Thirty points, one cut-and-paste, and this is the single highest-value thirty seconds in the course.</p></div>
+      <div class="step"><p><strong>Now the counter-intuitive one. Reset, and switch on "one idea per sentence" alone.</strong> Score 19, and look at the ask line: <strong>sentence 9 of 9.</strong> Good editing, applied without fixing structure first, buried the ask further. This is why session 3 came before session 4.</p></div>
+      <div class="step"><p><strong>Climb the whole ladder in order</strong> and watch the abstraction list shrink. It names them, so you can see exactly which phrase each rung removed.</p></div>
+      <div class="step"><p><strong>Get to 100, then read the finished message out loud.</strong> 57 words. It contains more information than the 163-word version, which is the part people find hardest to believe until they see both.</p></div>
+      <div class="step"><p><strong>Now switch on "add background so they have the full picture".</strong> <strong>100 drops to 64.</strong> The ask goes back to sentence 4 of 9 and the message returns to 145 words. Read the paragraph it adds: every word is true, relevant and well written. It is in front of the ask, and that is all it takes.</p></div>
+      <div class="step"><p><strong>Practise the sentence.</strong> Not "I think that is too long". Instead: <em>"Happy to include it - can it go below the ask? Right now it puts the decision in sentence 4 of 9."</em> You have accepted the request and protected the message, and nobody has to lose an argument.</p></div>
+      <div class="step"><p><strong>Switch to "Paste your own" and put your session 3 message in.</strong> Read the six rows. The abstraction list is usually the surprising one, because it names phrases you did not notice yourself typing.</p></div>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>If you take one thing from tonight.</strong> "Your ask is in sentence 4 of 9" is a fact and it ends a discussion that "this feels long" would have kept alive for a week. Measure the thing, then make the request specific.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 5</h2>
+      <span class="tag exercise">25 min</span>
+    </div>
+    <ol>
+      <li><strong>Score three real messages you have sent.</strong> Write the six numbers for each. Look for the pattern - most people have one row that is consistently bad and it is usually not the one they expected.</li>
+      <li><strong>Rewrite one to 80 or better</strong> and send the rewrite if it is still live.</li>
+      <li><strong>Collect your own abstractions.</strong> The widget's list is 30 entries and yours has different ones on it. Note the phrases you personally reach for.</li>
+      <li><strong>Find one passive on bad news</strong> in something you wrote, and rewrite it with a person in it. Notice how different it feels to send.</li>
+      <li><strong>Bring the 100-point version to session 5</strong>, because session 5 asks you to say it out loud, and a written message that scores 100 is not automatically a spoken one that works.</li>
+    </ol>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 4 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · One lever takes the message from 5 to 35 without changing a single word. Which, and why is it worth 30 points?</p>
+      <button class="qopt" type="button">A · Deleting the opening paragraph, because length is what readers react to first</button>
+      <button class="qopt" type="button">B · Replacing the abstractions, because they are what make it sound evasive</button>
+      <button class="qopt" type="button">C · Moving the ask to the first sentence, because a reader deciding in one sentence must be able to see what is wanted from them</button>
+      <p class="qwhy">The words, the length, the passives and the abstractions are all identical before and after. Only the order changed. Ask position carries 30 points because it is the difference between a message that can be acted on and one that has to be finished first.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">2 · Switching on "one idea per sentence" alone scores 19 and moves the ask to sentence 9 of 9. What does that teach?</p>
+      <button class="qopt" type="button">A · That splitting sentences is bad editing and should be avoided</button>
+      <button class="qopt" type="button">B · That style work applied before structure work can make a message harder to act on, because adding sentences above the ask pushes it further down</button>
+      <button class="qopt" type="button">C · That the scorer weights sentence length too heavily</button>
+      <p class="qwhy">Splitting is good editing. Position is measured relative to the whole message, so every sentence you add above the ask buries it further. Fix the order first and then the same edit costs you nothing - which is exactly the order these two sessions come in.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · Adding a paragraph of accurate, relevant background takes the finished message from 100 to 64. Why?</p>
+      <button class="qopt" type="button">A · Because it goes in front of the ask, so the ask moves to sentence 4 of 9 and the length climbs - nothing is penalised for being thorough</button>
+      <button class="qopt" type="button">B · Because background material is generally unnecessary in professional writing</button>
+      <button class="qopt" type="button">C · Because the scorer detects padding and applies a penalty</button>
+      <p class="qwhy">There is no padding detector and no penalty for thoroughness. The paragraph is honest and well written. It simply sits above the decision, and the measurement notices. The fix is not to delete it - it is to put it below the ask.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ OFFICIAL COVERAGE ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Six measured properties</span><span class="note">Ask position, words per sentence, passive count, abstraction count, specifics, total length - computed on your own text, in your browser, with no model call</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Passive voice as evasion on bad news</span><span class="note">Eight passives in Daybreak's 163 words, every one on the part that went wrong. Named as a heuristic count, not a verdict</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Corporate abstraction, listed by name</span><span class="note">All nine found in the original, with the common property that each could be deleted without losing information. The list is chosen, not derived, and the page says so</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The full ladder</span><span class="note">5, 35, 45, 59, 69, 84, 100 - verified in-browser and reproduced in the source map</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The splitting trap</span><span class="note">Sentence-splitting alone scores 19 and moves the ask from 4 of 4 to 9 of 9. Measured, not asserted</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The anti-lever, and the sentence it gives you</span><span class="note">100 to 64 from one accurate paragraph. "Can it go below the ask?" instead of "that is too long"</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Full rubric, every constant, and the honest limits of the passive and abstraction detectors: <span class="mono">materials/official-course-map.md</span>.</p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 4 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Ask position is worth 30</b><span>And costs one cut-and-paste. Nothing else on the board trades like that.</span></div>
+      <div class="cheat-item"><b>Structure before style</b><span>Splitting alone: score 19, ask at sentence 9 of 9. Order first, always.</span></div>
+      <div class="cheat-item"><b>Passive on bad news</b><span>"It was determined" reads as distancing. Name who. All eight in the original were on the failure.</span></div>
+      <div class="cheat-item"><b>Abstractions are long AND empty</b><span>Removing nine of them took 163 words to 69 on its own rung.</span></div>
+      <div class="cheat-item"><b>163 to 57 words</b><span>And it says more than the original. Length was never the information.</span></div>
+      <div class="cheat-item"><b>The sentence</b><span>"Happy to include it - can it go below the ask? It is currently sentence 4 of 9."</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>You have a message that scores 100 on paper. Session 5 makes you say it out loud, where none of these measurements exist: the opening line, what has to be cut because a room cannot re-read, why the interruption is usually the real question, and using silence on purpose after you name a number.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 4 of 6 · learn-communication-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="03-structure.html">← Previous</a> &nbsp;·&nbsp; <a href="05-the-spoken-version.html">Next: The spoken version →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=2"></script>
+<script src="../assets/comm-live.js?v=2"></script>
+</body>
+</html>

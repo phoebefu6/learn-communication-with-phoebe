@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Six sessions, one message that keeps failing. Audience, listening, structure, the written version, the spoken version, and the day it is bad news. With a scorer that measures your real text - including which sentence your ask is buried in. Free, by Phoebe Fu.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Learn Communication with Phoebe">
+<meta property="og:description" content="One message, rebuilt six times. With a clarity scorer that measures your real text and tells you which sentence your ask is buried in.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-communication-with-phoebe/">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-communication-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Learn Communication with Phoebe">
+<meta name="twitter:description" content="One message, rebuilt six times, with a scorer that measures your real text.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-communication-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Learn Communication with Phoebe</title>
+<link rel="stylesheet" href="assets/style.css?v=2">
+<style>
+
+  .stats-row { display: flex; gap: 2.4rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 2.1rem; font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: .72rem; opacity: .85; text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+
+  .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .course-card {
+    border: 1px solid var(--hairline);
+    border-top: 4px solid var(--diff, var(--indigo));
+    border-radius: var(--radius);
+    padding: 1.2rem 1.3rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: #fff;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+    position: relative;
+  }
+  .course-card:hover { border-color: var(--indigo-soft); border-top-color: var(--diff, var(--indigo)); box-shadow: 0 8px 28px rgba(31,78,95,.14); transform: translateY(-3px); }
+  .course-card .cicon { font-size: 1.7rem; line-height: 1; }
+  .course-card .cnum { font-size: .72rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .1em; }
+  .course-card h3 { font-size: 1.05rem; font-weight: 800; line-height: 1.3; }
+  .course-card p { font-size: .85rem; color: var(--muted); flex: 1; }
+  .course-card .meta { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+  .diff-legend { display: flex; gap: 1rem; margin-top: 1.6rem; font-size: .74rem; color: var(--muted); font-weight: 600; flex-wrap: wrap; }
+  .diff-legend i { display: inline-block; width: .85rem; height: .35rem; border-radius: 999px; margin-right: .35rem; vertical-align: middle; }
+
+  .paths { margin-top: 2.6rem; }
+  .paths h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .3rem; }
+  .paths .plede { color: var(--muted); font-size: .92rem; margin-bottom: .8rem; }
+  .path { display: flex; gap: .55rem; align-items: center; padding: .75rem 0; border-bottom: .5px solid var(--hairline); flex-wrap: wrap; }
+  .path:last-child { border-bottom: none; }
+  .path b { min-width: 15.5rem; font-size: .9rem; }
+  .path .pstep { background: var(--indigo-50); color: var(--indigo); border-radius: 999px; padding: .16rem .68rem; font-weight: 700; font-size: .8rem; text-decoration: none; transition: all .12s ease; }
+  .path .pstep:hover { background: var(--indigo); color: #fff; }
+  .path .parr { color: var(--faint); font-weight: 700; }
+
+  .mm-section { margin-top: 1.6rem; }
+  .mm-section h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .2rem; }
+  .mm-section .mm-lede { color: var(--muted); font-size: .92rem; margin-bottom: .4rem; }
+  .mm-wrap { border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff,#F5FAFC); padding: .6rem; overflow-x: auto; }
+  .mm-svg { width: 100%; height: auto; display: block; max-width: 60rem; margin: 0 auto; min-width: 34rem; }
+  .mm-link { cursor: pointer; text-decoration: none; }
+  .mm-node rect { transition: opacity .15s ease, filter .15s ease; }
+  .mm-node text { pointer-events: none; }
+  .mm-link:hover .mm-node rect { filter: brightness(1.06); }
+  .mm-edge { transition: opacity .15s ease; }
+
+  .not-this { border: 1px solid var(--hairline); border-left: 4px solid var(--amber); border-radius: var(--radius); background: #fff; padding: 1.1rem 1.3rem; margin-top: 1.2rem; }
+  .not-this h3 { font-size: .95rem; font-weight: 800; margin-bottom: .5rem; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn with Phoebe &middot; Communications</div>
+    <h1>Learn <span class="accent">Communication</span> with Phoebe</h1>
+    <p class="sub">Six sessions, 45 minutes each, and one message you rebuild in every single one of them. Not communication theory and not a personality course. The mechanics: working out what you actually want the person to do, hearing them before you draft, putting the ask where they will see it, and saying the hard version out loud. In session 4 a scorer reads your real text and tells you which sentence your ask is buried in, which is a harder audience than any colleague.</p>
+    <div class="stats-row">
+      <div class="stat"><b data-count="6">6</b><span>sessions</span></div>
+      <div class="stat"><b data-count="1">1</b><span>message, six rebuilds</span></div>
+      <div class="stat"><b data-count="6">6</b><span>things measured</span></div>
+      <div class="stat"><b data-count="30">30</b><span>points for one cut-and-paste</span></div>
+      <div class="stat"><b data-count="45">45</b><span>min per session</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>The six sessions &#128172; <span style="font-size:.85rem;font-weight:600;color:var(--muted)">&middot; one message, rebuilt in all of them</span></h2>
+      <p class="plede">You are <strong>Daybreak's data lead</strong> and the subscription redesign is three weeks late. You have to tell the founder. That is the message. It is currently 163 words, it contains nine corporate abstractions, and the thing you want from them is in the last sentence, which is why the last three updates got no reply.</p>
+    </div>
+
+    <div class="course-grid">
+      <a class="course-card" href="courses/01-the-ask.html" style="--diff:#34D399">
+        <span class="cicon">&#127919;</span>
+        <span class="cnum">Session 1 &middot; easy</span>
+        <h3>The ask</h3>
+        <p>Who is reading it, what you want them to actually do, and the one-sentence test. Most updates that get no reply contain no ask at all, and their authors have never noticed.</p>
+        <span class="meta"><span class="pill amber">&#9654; Start here</span></span>
+      </a>
+      <a class="course-card" href="courses/02-listening-first.html" style="--diff:#34D399">
+        <span class="cicon">&#127911;</span>
+        <span class="cnum">Session 2 &middot; easy</span>
+        <h3>Listening first</h3>
+        <p>You cannot structure a message for somebody you have not heard. The two questions to ask before drafting, what a non-reply is telling you, and reflecting back as a correction mechanism.</p>
+        <span class="meta"><span class="pill">before you draft</span></span>
+      </a>
+      <a class="course-card" href="courses/03-structure.html" style="--diff:#FBBF24">
+        <span class="cicon">&#129517;</span>
+        <span class="cnum">Session 3 &middot; medium</span>
+        <h3>Structure</h3>
+        <p>The ask goes first. Three skeletons worth knowing, the buried-lede failure with a number on it, and why the same structure survives an email, a document and a room.</p>
+        <span class="meta"><span class="pill">ask first</span></span>
+      </a>
+      <a class="course-card" href="courses/04-the-written-version.html" style="--diff:#FBBF24">
+        <span class="cicon">&#128221;</span>
+        <span class="cnum">Session 4 &middot; medium</span>
+        <h3>The written version</h3>
+        <p>The scorer. Sentence length, passive voice, abstraction, specifics, and ask position - all measured on your real text. Take the message from 5 to 100, then switch on the lever everybody asks for.</p>
+        <span class="meta"><span class="pill amber">&#9733; the scorer</span></span>
+      </a>
+      <a class="course-card" href="courses/05-the-spoken-version.html" style="--diff:#FB923C">
+        <span class="cicon">&#127908;</span>
+        <span class="cnum">Session 5 &middot; hands-on</span>
+        <h3>The spoken version</h3>
+        <p>The same skeleton out loud. The opening line, what has to be cut, why the interruption is usually the real question, and using silence on purpose.</p>
+        <span class="meta"><span class="pill">the room</span></span>
+      </a>
+      <a class="course-card" href="courses/06-bad-news-and-disagreement.html" style="--diff:#FB923C">
+        <span class="cicon">&#129704;</span>
+        <span class="cnum">Session 6 &middot; hands-on</span>
+        <h3>Bad news and disagreement</h3>
+        <p>Delivering it upward early and specifically, disagreeing without damage, taking the pushback without defending, and the repair conversation nobody teaches.</p>
+        <span class="meta"><span class="pill amber">&#128274; the hard version</span></span>
+      </a>
+    </div>
+
+    <div class="diff-legend">
+      <span><i style="background:#34D399"></i>easy - everyone</span>
+      <span><i style="background:#FBBF24"></i>medium</span>
+      <span><i style="background:#FB923C"></i>hands-on</span>
+      <span><i style="background:#F87171"></i>hardest</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>Your passport &#127915;</h2>
+      <p class="plede">Clear all three quiz questions in a session and it gets stamped. Six stamps means one message taken from ignored to acted on. Stamps live in this browser only.</p>
+    </div>
+    <div class="pp-strip"></div>
+  </section>
+
+  <section class="section">
+    <div class="not-this">
+      <h3>What this course is not, so you land in the right place &#129517;</h3>
+      <table class="clean">
+        <tr><th>If your question is</th><th>Go here instead</th></tr>
+        <tr><td>How do I use AI to draft the writing that fills my week?</td><td><span class="mono">learn-ai-writing-with-phoebe</span></td></tr>
+        <tr><td>How do I document software properly?</td><td><span class="mono">learn-tech-writing-with-phoebe</span></td></tr>
+        <tr><td>How do I build a deck that carries a talk?</td><td><span class="mono">learn-ai-ppt-with-phoebe</span></td></tr>
+        <tr><td>How do I design learning that changes behaviour?</td><td><span class="mono">learn-course-design-with-phoebe</span></td></tr>
+        <tr><td><strong>How do I say a thing to a person so that they act on it?</strong></td><td><strong>you are in the right place</strong></td></tr>
+      </table>
+      <p style="margin-top:.7rem;font-size:.86rem;color:var(--muted)">Deliberately AI-agnostic. Every judgement in here - who the reader is, what you actually want, what to cut, when to stop talking - is one a drafting tool cannot make for you.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths">
+      <h2>Choose your path &#128506;</h2>
+      <p class="plede">Three doors into the same conviction: being understood is a mechanical skill with measurable parts, not a personality you either have or do not.</p>
+      <div class="path"><b>&#9201; I have ninety minutes</b>
+        <a class="pstep" href="courses/01-the-ask.html">1</a><span class="parr">&rarr;</span>
+        <a class="pstep" href="courses/04-the-written-version.html">4</a>
+        <span style="font-size:.82rem;color:var(--muted)">find the ask, then watch one message go from 5 to 100 on measured criteria</span>
+      </div>
+      <div class="path"><b>&#128373; My updates get no reply</b>
+        <a class="pstep" href="courses/01-the-ask.html">1</a><span class="parr">&rarr;</span>
+        <a class="pstep" href="courses/03-structure.html">3</a><span class="parr">&rarr;</span>
+        <a class="pstep" href="courses/04-the-written-version.html">4</a>
+        <span style="font-size:.82rem;color:var(--muted)">the ask, where it goes, and the six things a reader is actually reacting to</span>
+      </div>
+      <div class="path"><b>&#128172; The whole journey</b>
+        <a class="pstep" href="courses/01-the-ask.html">1</a><span class="parr">&rarr;</span>
+        <a class="pstep" href="courses/02-listening-first.html">2</a><span class="parr">&rarr;</span>
+        <a class="pstep" href="courses/03-structure.html">3</a><span class="parr">&rarr;</span>
+        <a class="pstep" href="courses/04-the-written-version.html">4</a><span class="parr">&rarr;</span>
+        <a class="pstep" href="courses/05-the-spoken-version.html">5</a><span class="parr">&rarr;</span>
+        <a class="pstep" href="courses/06-bad-news-and-disagreement.html">6</a>
+        <span style="font-size:.82rem;color:var(--muted)">one message, from ignored to acted on, including the day it is bad news</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>What is honest here &#129534;</h2>
+      <p class="plede">The scorer is mostly measurement and partly a rubric, and it says which is which on its own footer.</p>
+    </div>
+    <table class="clean">
+      <tr><th>Claim</th><th>Status</th></tr>
+      <tr><td>Where your ask is, sentence N of M</td><td><strong>Really measured</strong> on your own text. It finds the first sentence that asks for a decision or an action and reports its position</td></tr>
+      <tr><td>Words per sentence, specifics, total length</td><td><strong>Really measured.</strong> Plain string analysis, no model involved</td></tr>
+      <tr><td>Passive-voice count</td><td>Measured by a <strong>regex heuristic</strong> over a fixed participle list. It will miss some and occasionally flag a false one. The page says so where the number appears</td></tr>
+      <tr><td>Abstraction count</td><td>Measured against a <strong>list of 30 entries, chosen not derived.</strong> A starting point for noticing, not a standard</td></tr>
+      <tr><td>The score out of 100</td><td>A stated rubric weighting those six measurements. Two people can write a 70 and an 85 and the 70 can be the better message for its reader</td></tr>
+      <tr><td>Daybreak, the founder, the message</td><td>A teaching scenario. The measurement code is real; the situation is written</td></tr>
+    </table>
+  </section>
+
+  <section class="section mm-section">
+    <h2>The knowledge map &#129504;</h2>
+    <p class="mm-lede">The whole course at a glance - hover a session to spotlight its concepts, click any node to jump in.</p>
+    <div class="mm-wrap"><div id="mindmap"></div></div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>learn-communication-with-phoebe &middot; by Phoebe Fu &nbsp;&middot;&nbsp; &#128218; <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe &#8599;</a></span>
+    <span>Source map with every number: <span class="mono">materials/official-course-map.md</span></span>
+  </footer>
+
+</main>
+
+<script>
+window.MINDMAP_DATA = {
+  title: "Learn\nCommunication",
+  centerColor: "#123441",
+  sessions: [
+    { label: "The ask", href: "courses/01-the-ask.html", color: "#34D399",
+      concepts: [
+        { label: "What do they DO", href: "courses/01-the-ask.html" },
+        { label: "The one-sentence test", href: "courses/01-the-ask.html" },
+        { label: "Reader cost", href: "courses/01-the-ask.html" } ] },
+    { label: "Listening\nfirst", href: "courses/02-listening-first.html", color: "#34D399",
+      concepts: [
+        { label: "The two questions", href: "courses/02-listening-first.html" },
+        { label: "Reading the silence", href: "courses/02-listening-first.html" },
+        { label: "Reflecting back", href: "courses/02-listening-first.html" } ] },
+    { label: "Structure", href: "courses/03-structure.html", color: "#FBBF24",
+      concepts: [
+        { label: "The ask goes first", href: "courses/03-structure.html" },
+        { label: "Three skeletons", href: "courses/03-structure.html" },
+        { label: "The buried lede", href: "courses/03-structure.html" } ] },
+    { label: "The written\nversion", href: "courses/04-the-written-version.html", color: "#FBBF24",
+      concepts: [
+        { label: "Sentence 4 of 4", href: "courses/04-the-written-version.html" },
+        { label: "Abstractions by name", href: "courses/04-the-written-version.html" },
+        { label: "The splitting trap", href: "courses/04-the-written-version.html" } ] },
+    { label: "The spoken\nversion", href: "courses/05-the-spoken-version.html", color: "#FB923C",
+      concepts: [
+        { label: "The opening line", href: "courses/05-the-spoken-version.html" },
+        { label: "The interruption", href: "courses/05-the-spoken-version.html" },
+        { label: "Silence on purpose", href: "courses/05-the-spoken-version.html" } ] },
+    { label: "Bad news and\ndisagreement", href: "courses/06-bad-news-and-disagreement.html", color: "#FB923C",
+      concepts: [
+        { label: "Early and specific", href: "courses/06-bad-news-and-disagreement.html" },
+        { label: "Disagree, not damage", href: "courses/06-bad-news-and-disagreement.html" },
+        { label: "The repair", href: "courses/06-bad-news-and-disagreement.html" } ] }
+  ]
+};
+</script>
+<script src="assets/mindmap.js?v=2"></script>
+<script src="assets/app.js?v=2"></script>
+</body>
+</html>
