@@ -1211,3 +1211,8 @@ figure.zoomable.can-scroll figcaption::after {
 .pp-stamp i { color: var(--ink); }
 /* contrast-patch-2c */
 .cl-modes button.on { color: var(--ink); } .cl i, .cl-part i { color: var(--muted); }
+
+/* Prompt-box label sits inside the box (2026-10-12). Hanging it 0.7rem above the edge let any
+   overflow:auto parent cut it in half; in normal flow nothing can clip it. The right margin
+   keeps it clear of the Copy button; long labels wrap instead of running under it. */
+.prompt-box > .label{ position: static; display: table; margin: 0 5.2rem .55rem 0; white-space: normal; line-height: 1.45; }
